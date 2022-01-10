@@ -45,4 +45,4 @@ a = a + 1;
 b = b + 5;
 c = c + " String!";
 
-console.log(c)
+console.log(a)
