@@ -210,4 +210,39 @@ const myStr = 'This is the start. ' + 'This is the end.';
 */
 
 // Concatenating Strings with the Plus Equals Operator
+/*
+let myStr = 'This is the first sentence. ';
+myStr += 'This is the second sentence.'
+console.log(myStr)
+*/
+
+// Constructing Strings with Variables
+/*
+const myName = "Azeem";
+const myStr = "My name is " + myName + ' and I am well';
+*/
+
+// Appending Variables to Strings
+/*
+const someAdjective = 'fun';
+let myStr = 'Learning to code is ';
+myStr += someAdjective;
+*/
+
+// Find the Length of a String
+/*
+let lastNameLength = 0;
+const lastName = "Lovelace";
+lastNameLength = lastName.length;
+*/
+
+// Use Bracket Notation to Find the First Character in a String
+/*
+let firstLetterOfLastName = "";
+const lastName = "Lovelace";
+firstLetterOfLastName = lastName[0];
+console.log(firstLetterOfLastName);
+*/
+
+// Understand String Immutability
 
