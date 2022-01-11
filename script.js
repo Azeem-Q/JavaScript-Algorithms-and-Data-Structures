@@ -272,4 +272,14 @@ console.log(secondToLastLetterOfLastName);
 */
 
 // Word Blanks
+/*
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+const wordBlanks = "A " + myAdjective + " " + myNoun + " " + myVerb + " away " + myAdverb + " after seeing an angry man holding a rifle.";
+console.log(wordBlanks);
+*/
+
+// Store Multiple Values in one Variable using JavaScript Arrays
 
