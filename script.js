@@ -245,4 +245,31 @@ console.log(firstLetterOfLastName);
 */
 
 // Understand String Immutability
+/*
+let myStr = "Jello World";
+myStr = 'Hello World';
+*/
+
+// Use Bracket Notation to Find the Nth Character in a String
+/*
+const lastName = "Lovelace";
+const thirdLetterOfLastName = lastName[2];
+console.log(thirdLetterOfLastName);
+*/
+
+// Use Bracket Notation to Find the Last Character in a String
+/*
+const lastName = "Lovelace";
+const lastLetterOfLastName = lastName[lastName.length - 1];
+console.log(lastLetterOfLastName);
+*/
+
+// Use Bracket Notation to Find the Nth-to-Last Character in a String
+/*
+const lastName = "Lovelace";
+const secondToLastLetterOfLastName = lastName[lastName.length - 2];
+console.log(secondToLastLetterOfLastName);
+*/
+
+// Word Blanks
 
