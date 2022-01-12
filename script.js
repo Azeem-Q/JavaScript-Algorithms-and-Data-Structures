@@ -327,6 +327,45 @@ const removedFromMyArray = myArray.pop();
 */
 
 // Manipulate Arrays With shift() (.shift() removes first element of array)
+/*
+const myArray = [["John", 23], ["dog", 3]];
+const removedFromMyArray = myArray.shift();
+*/
 
+// Manipulate Arrays With unshift() (.unshift insert elements at the beginning of array)
+/*
+const myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+myArray.unshift(["Paul", 35]);
+*/
 
+// Shopping List
+/*
+const myList = [];
+myList.push(
+    ['Tissue Roll', 4], 
+    ['Surf', 1], 
+    ['Milkpak', 33], 
+    ['Ketchup', 1], 
+    ['Soap', 12], 
+    ['Cooking Oil', 6]);
+*/
+
+// Write Reusable JavaScript with Functions
+/*
+function reusableFunction() {
+    console.log('Hi World');
+}
+reusableFunction();
+*/
+
+// Passing Values to Functions with Arguments
+/*
+function functionWithArgs(val1, val2) {
+    console.log(val1 + val2);
+}
+functionWithArgs(3, 9);
+*/
+
+// Return a Value from a Function with Return
 
