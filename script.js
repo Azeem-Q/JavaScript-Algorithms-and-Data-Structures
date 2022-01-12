@@ -282,4 +282,51 @@ console.log(wordBlanks);
 */
 
 // Store Multiple Values in one Variable using JavaScript Arrays
+/*
+const myArray = ['AQ', 10];
+*/
+
+// Nest one Array within Another Array
+/*
+const myArray = [['AQ', 10], ['MQ', 12]];
+*/
+
+// Access Array Data with Indexes
+/*
+const myArray = [50, 60, 70];
+const myData = myArray[0];
+*/
+
+// Modify Array Data With Indexes
+/*
+const myArray = [18, 64, 99];
+myArray[0] = 45;
+*/
+
+// Access Multi-Dimensional Arrays With Indexes
+/*
+const myArray = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [[10, 11, 12], 13, 14]
+];
+const myData = myArray[2][1];
+*/
+
+// Manipulate Arrays With push() (.push() insert element at an end of array)
+/*
+const myArray = [["John", 23], ["cat", 2]];
+myArray.push(["dog", 3]);
+*/
+
+// Manipulate Arrays With pop() (.pop() removes last element of array)
+/*
+const myArray = [["John", 23], ["cat", 2]];
+const removedFromMyArray = myArray.pop();
+*/
+
+// Manipulate Arrays With shift() (.shift() removes first element of array)
+
+
 
