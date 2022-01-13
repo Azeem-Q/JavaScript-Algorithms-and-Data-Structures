@@ -402,3 +402,64 @@ fun2();
 */
 
 // Local Scope and Functions
+/*
+function myLocalScope() {
+    let myVar = 5;
+    console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+
+console.log('outside myLocalScope', myVar);
+*/
+
+// Global vs. Local Scope in Functions (if both variables have same name, local variables inside function will take precedence over global variablels)
+/*
+const outerWear = 'T-Shirt';
+
+function myOutfit() {
+    let outerWear = 'sweater';
+    return outerWear;
+}
+let answer = myOutfit();
+console.log(answer);
+*/
+
+// Understanding Undefined Value returned from a Function (function return 'undefined' when return is not defined in function)
+/*
+let sum = 0;
+
+function addThree() {
+    sum = sum + 3;
+}
+function addFive() {
+    sum = sum + 5;
+}
+
+
+addThree();
+addFive();
+*/
+
+// Assignment with a Returned Value
+/*
+let processed = 0;
+
+function processArg(num) {
+    return (num + 3) / 5;
+}
+processed = processArg(7);
+*/
+
+// Stand in Line
+
+function nextInLine(arr, item) {
+    arr.push(3);
+    return arr.shift();
+}
+nextInLine([], 'a');
+
+const testArr = [1, 2, 3, 4, 5];
+
+console.log('Before: ' + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log('After: ' + JSON.stringify(testArr));
