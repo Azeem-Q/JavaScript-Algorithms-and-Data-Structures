@@ -450,16 +450,29 @@ function processArg(num) {
 processed = processArg(7);
 */
 
-// Stand in Line
-
+// Stand in Line (watch vid.)
+/*
 function nextInLine(arr, item) {
-    arr.push(3);
-    return arr.shift();
+    arr.push(item);
+    item = arr.shift();
+    return item;
 }
-nextInLine([], 'a');
+nextInLine([], 1);
 
 const testArr = [1, 2, 3, 4, 5];
 
 console.log('Before: ' + JSON.stringify(testArr));
 console.log(nextInLine(testArr, 6));
 console.log('After: ' + JSON.stringify(testArr));
+*/
+
+// Understanding Boolean Values
+/*
+function welcomeToBooleans() {
+
+    return true;
+}
+*/
+
+// Use Conditional Logic with If Statements
+
