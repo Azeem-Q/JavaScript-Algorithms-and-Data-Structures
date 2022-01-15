@@ -601,4 +601,24 @@ testLessOrEqual(10);
 */
 
 // Comparisons with the Logical And Operator
+/*
+function testLogicalAnd(val) {
+    if (val <= 50 && val >= 25) {
+        return "Yes";
+        }
 
+    return "No";
+}
+
+testLogicalAnd(10);
+*/
+
+// Comparisons with the Logical Or Operator
+
+function testLogicalOr(val) {
+    if (val > 10 || val < 20) {
+        return "Outside";
+    }
+    return "Inside";
+}
+console.log(testLogicalOr(5));
