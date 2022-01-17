@@ -614,11 +614,30 @@ testLogicalAnd(10);
 */
 
 // Comparisons with the Logical Or Operator
-
+/*
 function testLogicalOr(val) {
-    if (val > 10 || val < 20) {
+    if (val > 20 || val < 10) {
         return "Outside";
     }
     return "Inside";
 }
-console.log(testLogicalOr(5));
+testLogicalOr(15);
+*/
+
+// Introducing Else Statements
+/*
+function testElse(val) {
+    let result = "";
+    if (val > 5) {
+        result = "Bigger than 5";
+    }   else {
+        result = "5 or Smaller";
+    }
+    return result;
+}
+
+testElse(4);
+*/
+
+// Introducing Else If Statements
+
