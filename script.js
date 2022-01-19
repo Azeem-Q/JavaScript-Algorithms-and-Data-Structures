@@ -790,7 +790,7 @@ sequentialSizes(1);
 */
 
 // Replacing If Else Chains with Switch
-
+/*
 function chainToSwitch(val) {
     let answer = "";
     // Only change code below this line
@@ -806,7 +806,7 @@ function chainToSwitch(val) {
             answer = "There is no #1";
             break;
         case 99:
-            answer = "Missed me by this much";
+            answer = "Missed me by this much!";
             break;
         case 7:
             answer = "Ate Nine";
@@ -815,4 +815,52 @@ function chainToSwitch(val) {
     return answer;
   }
   
-  console.log(chainToSwitch(7));
+  chainToSwitch(7);
+  */
+
+// Returning Boolean Values from Functions
+/*
+function isLess(a, b) {
+    return a < b;
+}
+
+isLess(10, 15);
+*/
+
+// Return Early Pattern for Functions (function exits at return statement without executing code below it)
+/*
+function abTest(a, b) {
+    if (a < 0 || b < 0) {
+        return
+    }
+    return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+
+abTest(2, 2);
+*/
+
+// Counting Cards
+/*
+let count = 0;
+
+function cc(card) {
+    if (card >= 2 && card <= 6) {
+        count = count + 1;
+    }   else if (card >= 7 && card <= 9) {
+        count = count + 0;
+    }   else if (card == 10 || card == 'J' || card == 'Q' || card == 'K' || card == 'A') {
+        count = count - 1
+    }
+    if (count > 0) {
+        return count + " Bet";    
+    }   else if (count <= 0) {
+        return count + " Hold";
+    }
+    return "Change Me";
+}
+
+cc(2); cc(3); cc(7); cc('K'); cc('A');
+*/
+
+// Build JavaScript Objects
+
