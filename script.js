@@ -863,4 +863,73 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
 */
 
 // Build JavaScript Objects
+/*
+const myDog = {
+    "name": "Rocky",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["Rob", "Alex", "Stu"]
+};
+*/
 
+// Accessing Object Properties with Dot Notation
+/*
+const testObj = {
+    "hat": "ballcap",
+    "shirt": "jersey",
+    "shoes": "cleats"
+};
+
+const hatValue = testObj.hat;
+const shirtValue = testObj.shirt;
+*/
+
+// Accessing Object Properties with Bracket Notation (If the property of the object you are trying to access has a space in its name, you will need to use bracket notation. However, you can still use bracket notation on object properties without spaces.)
+/*
+const testObj = {
+    "an entree": "hamburger",
+    "my side": "veggies",
+    "the drink": "water"
+};
+
+const entreeValue = testObj["an entree"];
+const drinkValue = testObj["the drink"];
+*/
+
+// Accessing Object Properties with Variables
+/*
+const testObj = {
+    12: "Namath",
+    16: "Montana",
+    19: "Unitas"
+};
+
+const playerNumber = 16;
+const player = testObj[playerNumber];
+*/
+
+// Updating Object Properties
+/*
+const myDog = {
+    "name": "Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.name = "Happy Coder"
+*/
+
+// Add New Properties to a JavaScript Object
+/*
+const myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+  };
+  
+myDog.bark = "woof";
+*/
+
+// Delete Properties from a JavaScript Object
