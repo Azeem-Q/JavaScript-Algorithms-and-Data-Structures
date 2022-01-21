@@ -1074,6 +1074,15 @@ const recordCollection = {
     }
 };
 
-function updateRecords(records, id, artist, trackks, val) {
-    return records
+function updateRecords(records, id, prop, val) {
+    if (val == "") {
+        delete records.id.prop;
+    }   else {
+        records.id = {
+            prop: val,
+        }
+    }
+    return records.id;
 }
+
+console.log(updateRecords(recordCollection, 5439, "artist", "ABBA"));
