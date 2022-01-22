@@ -1047,7 +1047,7 @@ const myPlants = [
 */
 
 // Record Collection
-
+/*
 const recordCollection = {
     2548: {
         albumTitle: 'Slippery When Wet',
@@ -1076,13 +1076,70 @@ const recordCollection = {
 
 function updateRecords(records, id, prop, val) {
     if (val == "") {
-        delete records.id.prop;
-    }   else {
-        records.id = {
-            prop: val,
-        }
+        delete records[id][prop];
+    }   else if (prop != "tracks") {
+        records[id][prop] = val;
+    }   else if (prop == "tracks" && records[id].hasOwnProperty(prop) == true) {
+        records[id][prop].push(val);
+    }   else if (prop == "tracks" && records[id].hasOwnProperty(prop) == false) {
+        records[id][prop] = [val];
     }
-    return records.id;
+    return records;
 }
 
-console.log(updateRecords(recordCollection, 5439, "artist", "ABBA"));
+updateRecords(recordCollection, 5439, "artist", "ABBA");
+updateRecords(recordCollection, 1245, "tracks", "Love Affair");
+updateRecords(recordCollection, 2468, "tracks", "Vertigo");
+updateRecords(recordCollection, 5439, "tracks", "Take a Chance on Me")
+
+console.log(recordCollection[5439].tracks);
+*/
+
+// Iterate with JavaScript While Loops
+/*
+const myArray = [];
+let i = 5;
+
+while (i >= 0) {
+    myArray.push(i);
+    i--;
+}
+
+console.log(myArray);
+*/
+
+// Iterate with JavaScript For Loops (for (a; b; c), where a is the initialization statement, b is the condition statement, and c is the final expression.)
+/*
+const myArray = [];
+
+for (let i = 1; i < 6; i++) {
+    myArray.push(i);
+}
+
+console.log(myArray)
+*/
+
+// Iterate Odd Numbers With a For Loop
+/*
+const myArray = [];
+
+for (let i = 1; i < 10; i += 2) {
+    myArray.push(i);
+}
+
+console.log(myArray);
+*/
+
+// Count Backwards With a For Loop
+/*
+const myArray = [];
+
+for (let i = 9; i > 0; i -= 2) {
+    myArray.push(i);
+}
+
+console.log(myArray);
+*/
+
+// Iterate Through an Array with a For Loop
+
