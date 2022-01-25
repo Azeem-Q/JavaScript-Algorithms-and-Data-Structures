@@ -1153,4 +1153,33 @@ console.log(total);
 */
 
 // Nesting For Loops
+/*
+function multiplyAll(arr) {
+    let product = 1;
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            product *= arr[i][j];
+        }
+    }
+    return product;
+}
+
+console.log(multiplyAll([[1, 2], [3, 4], [5, 6, 7]]));
+*/
+
+// Iterate with JavaScript Do...While Loops (Do-While loop will always execute once without evaluating condition. Must initialize variable before loop or it will never end)
+/*
+const myArray = [];
+let i = 10;
+
+do {
+    myArray.push(i);
+    i++;
+}   while (i < 5);
+
+console.log(myArray);
+console.log(i);
+*/
+
+// Replace Loops using Recursion
 
