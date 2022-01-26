@@ -1181,7 +1181,7 @@ console.log(myArray);
 console.log(i);
 */
 
-// Replace Loops using Recursion
+// Replace Loops using Recursion (recursive function calls itself inside its body. Recursive function must always have a condition to stop calling itself, otherwise, it will call itself indefinitely)
 /*
 function multiply(arr, n) {
     let product = 1;
@@ -1190,7 +1190,7 @@ function multiply(arr, n) {
     }
     return product;
   }
-*//*
+/*
   function multiply(arr, n) {
     if (n <= 0) {
       return 1;
@@ -1202,8 +1202,36 @@ function multiply(arr, n) {
   console.log(multiply([5, 9, 8, 8, 418], 3));
   */
 
-  let a = [5, 9, 8, 418];
+ //console.log(multiply([5, 9, 8, 418], 3));
 
-  // let b = 3;
+ function countDown(num) {
+     console.log(num);
+     const newNum = --num;
+     if (newNum > 0) {
+         countDown(newNum);
+     }
+ }
 
-  for (let b = 3; b <= )
+ // program to find the factorial of a number
+function factorial(x) {
+
+    // if number is 0
+    if (x === 0) {
+        return 1;
+    }
+
+    // if number is positive
+    else {
+        return x * factorial(x - 1);
+    }
+}
+
+const num = 3;
+
+// calling factorial() if num is non-negative
+if (num > 0) {
+    let result = factorial(num);
+    console.log(`The factorial of ${num} is ${result}`);
+}
+
+factorial(10);
