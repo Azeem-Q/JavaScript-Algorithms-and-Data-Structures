@@ -1182,4 +1182,28 @@ console.log(i);
 */
 
 // Replace Loops using Recursion
+/*
+function multiply(arr, n) {
+    let product = 1;
+    for (let i = 0; i < n; i++) {
+      product *= arr[i];
+    }
+    return product;
+  }
+*//*
+  function multiply(arr, n) {
+    if (n <= 0) {
+      return 1;
+    } else {
+      return multiply(arr, n - 1) * arr[n - 1];
+    }
+  }
 
+  console.log(multiply([5, 9, 8, 8, 418], 3));
+  */
+
+  let a = [5, 9, 8, 418];
+
+  // let b = 3;
+
+  for (let b = 3; b <= )
