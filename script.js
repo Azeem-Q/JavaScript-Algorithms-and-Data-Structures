@@ -1240,4 +1240,22 @@ console.log(lookUpProfile("Akira", "likes"));
 */
 
 // Generate Random Fractions with JavaScript
+/*
+function randomFraction() {
+    return Math.random();
+}
+
+console.log(randomFraction());
+*/
+
+// Generate Random Whole Numbers with JavaScript
+/*
+function randomWholeNum() {
+    return Math.floor(Math.random() * 10);
+}
+
+console.log(randomWholeNum());
+*/
+
+// Generate Random Whole Numbers within a Range
 
