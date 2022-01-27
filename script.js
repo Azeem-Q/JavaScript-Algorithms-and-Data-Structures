@@ -1266,5 +1266,14 @@ function randomRange(myMin, myMax) {
 console.log(randomRange(1, 2));
 */
 
-// Use the parseInt Function
+// Use the parseInt Function (parseInt converts string into integer)
+/*
+function convertToInteger(str) {
+    return parseInt(str);
+}
+
+console.log(parseInt("56"));
+*/
+
+// Use the parseInt Function with a Radix
 
