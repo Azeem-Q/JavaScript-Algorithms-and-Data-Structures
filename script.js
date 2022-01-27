@@ -1183,55 +1183,61 @@ console.log(i);
 
 // Replace Loops using Recursion (recursive function calls itself inside its body. Recursive function must always have a condition to stop calling itself, otherwise, it will call itself indefinitely)
 /*
-function multiply(arr, n) {
-    let product = 1;
-    for (let i = 0; i < n; i++) {
-      product *= arr[i];
-    }
-    return product;
-  }
-/*
-  function multiply(arr, n) {
+function sum(arr, n) {
     if (n <= 0) {
-      return 1;
-    } else {
-      return multiply(arr, n - 1) * arr[n - 1];
-    }
-  }
-
-  console.log(multiply([5, 9, 8, 8, 418], 3));
-  */
-
- //console.log(multiply([5, 9, 8, 418], 3));
-
- function countDown(num) {
-     console.log(num);
-     const newNum = --num;
-     if (newNum > 0) {
-         countDown(newNum);
-     }
- }
-
- // program to find the factorial of a number
-function factorial(x) {
-
-    // if number is 0
-    if (x === 0) {
-        return 1;
-    }
-
-    // if number is positive
-    else {
-        return x * factorial(x - 1);
+        return 0;
+    }   else {
+        return sum(arr, n - 1) + arr[n - 1];
     }
 }
 
-const num = 3;
+console.log(sum([1, 5, 8, 10, 20, 30], 5));
+*/
 
-// calling factorial() if num is non-negative
-if (num > 0) {
-    let result = factorial(num);
-    console.log(`The factorial of ${num} is ${result}`);
+// Profile Lookup
+/*
+const contacts = [
+    {
+        firstName: "Akira",
+        lastName: "Laine",
+        number: "0543236543",
+        likes: ["Pizza", "Coding", "Brownie Points"],
+    },
+    {
+        firstName: "Harry",
+        lastName: "Potter",
+        number: "0994372684",
+        likes: ["Hogwarts", "Magic", "Hagrid"],
+    },
+    {
+        firstName: "Sherlock",
+        lastName: "Holmes",
+        number: "0487345643",
+        likes: ["Intriguing Cases", "Violin"],
+    },
+    {
+        firstName: "Kristian",
+        lastName: "Vos",
+        number: "unknown",
+        likes: ["Javascript", "Gaming", "Foxes"],
+    },
+];
+
+function lookUpProfile(name, prop) {
+    for (let i = contacts.length; i > 0; i--) {
+        if (contacts[i - 1]["firstName"] != name) {
+            continue;
+        }   else if (contacts[i - 1]["firstName"] == name && contacts[i - 1].hasOwnProperty(prop) == true) {
+            return contacts[i - 1][prop]; 
+        }   else if (contacts[i - 1]["firstName"] == name && contacts[i - 1].hasOwnProperty(prop) == false) {
+            return "No such property";
+        }   
+    }
+    return "No such contact"
 }
 
-factorial(10);
+console.log(lookUpProfile("Akira", "likes"));
+*/
+
+// Generate Random Fractions with JavaScript
+
