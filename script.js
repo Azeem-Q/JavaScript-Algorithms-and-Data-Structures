@@ -1285,7 +1285,36 @@ console.log(convertToInteger("10011"));
 */
 
 // Use the Conditional (Ternary) Operator
-
+/*
 function checkEqual(a, b) {
-    
+    return a == b ? "Equal" : "Not Equal";
 }
+
+console.log(checkEqual(9, 9));
+*/
+
+// Use Multiple Conditional (Ternary) Operators
+/*
+function checkSign(num) {
+    return (num === 0) ? "zero"
+    : (num > 0) ? "positive"
+    : "negative";
+}
+
+console.log(checkSign(-100));
+*/
+
+// Use Recursion to Create a Countdown
+
+function countdown(n) {
+    if (n < 1) {
+        return [];
+    }   else {
+        const countArr = countdown(n - 1);
+        countArr.unshift(n);
+        return countArr;
+    }
+}
+
+console.log(countdown(10));
+
