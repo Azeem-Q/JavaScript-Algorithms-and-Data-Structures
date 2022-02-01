@@ -1305,7 +1305,7 @@ console.log(checkSign(-100));
 */
 
 // Use Recursion to Create a Countdown
-
+/*
 function countdown(n) {
     if (n < 1) {
         return [];
@@ -1317,4 +1317,23 @@ function countdown(n) {
 }
 
 console.log(countdown(10));
+*/
 
+function countdown(n) {
+    if (n < 1) {
+        console.log('At the end of recursion. Creating and returning an empty array.');
+        return [];
+    }   else {
+        const arr = countdown(n - 1);
+        console.log("Got the following array back from the recursive call:");
+        console.log(JSON.stringify(arr));
+        arr.unshift(n);
+        console.log("Prefixing it with " + n + " and returning the result:");
+        console.log(JSON.stringify(arr));
+        return arr;
+    }
+}
+
+let result = countdown(5);
+
+console.log(result);
