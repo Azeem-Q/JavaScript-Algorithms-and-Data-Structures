@@ -1318,7 +1318,7 @@ function countdown(n) {
 
 console.log(countdown(10));
 */
-
+/*
 function countdown(n) {
     if (n < 1) {
         console.log('At the end of recursion. Creating and returning an empty array.');
@@ -1337,3 +1337,22 @@ function countdown(n) {
 let result = countdown(5);
 
 console.log(result);
+*/
+
+// Use Recursion to Create a Range of Numbers
+/*
+function rangeOfNumbers(startNum, endNum) {
+    if (startNum > endNum) {
+        return [];
+    }   else {
+        const arr = rangeOfNumbers(startNum + 1, endNum);
+        arr.unshift(startNum);
+        return arr;
+    }      
+}
+
+console.log(rangeOfNumbers(1, 10));
+*/
+
+// Compare Scopes of the var and let Keywords
+
