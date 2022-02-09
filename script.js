@@ -1491,5 +1491,110 @@ const sum = (...args) => {
 console.log(sum(3, 5, 5, 10));
 */
 
-// Use the Spread Operator to Evaluate Arrays In-Place
+// Use the Spread Operator to Evaluate Arrays In-Place (Spread operator (...) unpacks or spread the array)
+/*
+const arr = [6, 89, 3, 45];
+console.log(...arr);
+
+the spread operator only works in-place, like in an argument 
+to a function or in an array literal. The following code 
+will not work:
+
+const spreaded = ...arr;
+
+
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+
+arr2 = [...arr1];
+
+console.log(arr2);
+*/
+
+// Use Destructuring Assignment to Extract Values from Objects
+
+/*
+Destructuring assignment is special syntax introduced in ES6, 
+for neatly assigning values taken directly from an object.
+
+Consider the following ES5 code:
+
+const user = { name: 'John Doe', age: 34 };
+
+const name = user.name;
+const age = user.age;
+name would have a value of the string John Doe, and age would 
+have the number 34.
+
+Here's an equivalent assignment statement using the ES6 
+destructuring syntax:
+
+const { name, age } = user;
+Again, name would have a value of the string John Doe, and 
+age would have the number 34.
+
+Here, the name and age variables will be created and assigned 
+the values of their respective values from the user object. 
+You can see how much cleaner this is.
+
+You can extract as many or few values from the object as you 
+want.
+
+const HIGH_TEMPERATURES = {
+    yesterday: 75,
+    today: 77,
+    tomorrow: 80
+};
+
+const {today, tomorrow} = HIGH_TEMPERATURES;
+
+console.log(today, tomorrow);
+*/
+
+// Use Destructuring Assignment to Assign Variables from Objects
+
+/*
+Destructuring allows you to assign a new variable name when 
+extracting values. You can do this by putting the new name 
+after a colon when assigning the value.
+
+Using the same object from the last example:
+
+const user = { name: 'John Doe', age: 34 };
+Here's how you can give new variable names in the assignment:
+
+const { name: userName, age: userAge } = user;
+You may read it as "get the value of user.name and assign it 
+to a new variable named userName" and so on. The value of 
+userName would be the string John Doe, and the value of 
+userAge would be the number 34.
+
+
+const HIGH_TEMPERATURES = {
+    yesterday: 75,
+    today: 77,
+    tomorrow: 80
+};
+
+const {today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURES;
+
+console.log(highToday, highTomorrow);
+*/
+
+// Use Destructuring Assignment to Assign Variables from Nested Objects
+/*
+const LOCAL_FORECAST = {
+    yesterday: { low: 61, high: 75 },
+    today: { low: 64, high: 77 },
+    tomorrow: { low: 68, high: 80 }
+};
+
+const { today: { low: lowToday, high: highToday }} = LOCAL_FORECAST;
+
+console.log(lowToday, highToday);
+*/
+
+// Use Destructuring Assignment to Assign Variables from Arrays (comma is used to navigate the array index)
+
+let a = 8, b = 6;
 
