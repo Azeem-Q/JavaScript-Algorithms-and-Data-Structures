@@ -1482,4 +1482,14 @@ console.log(increment(2));
 */
 
 // Use the Rest Parameter with Function Parameters
+/*
+const sum = (...args) => {
+    //const args = [x, y, z];
+    return args.reduce((a, b) => a + b, 0);
+}
+
+console.log(sum(3, 5, 5, 10));
+*/
+
+// Use the Spread Operator to Evaluate Arrays In-Place
 
