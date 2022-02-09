@@ -1595,6 +1595,11 @@ console.log(lowToday, highToday);
 */
 
 // Use Destructuring Assignment to Assign Variables from Arrays (comma is used to navigate the array index)
-
+/*
 let a = 8, b = 6;
+[a, b] = [b, a];
+console.log(a, b);
+*/
+
+// Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements
 
