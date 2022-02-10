@@ -1683,3 +1683,14 @@ console.log(carrot.name);
 
 // Use getters and setters to Control Access to an Object
 
+class Thermostat {
+    constructor(f) {
+        this._f = f;
+    }
+}
+
+get celsius() {
+    return (5 / 9) * (this._f - 32);
+}
+
+set
