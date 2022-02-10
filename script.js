@@ -1650,4 +1650,11 @@ console.log(failuresList);
 */
 
 // Write Concise Object Literal Declarations Using Object Property Shorthand
+/*
+const createPerson = (name, age, gender) => ({name, age, gender})
+
+console.log(createPerson('Azeem', 33, "Male"));
+*/
+
+// Write Concise Declarative Functions with ES6
 
