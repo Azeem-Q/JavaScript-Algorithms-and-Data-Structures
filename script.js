@@ -1669,5 +1669,17 @@ bicycle.setGear(3);
 console.log(bicycle.gear);
 */
 
-// Use class Syntax to Define a Constructor Function
+// Use class Syntax to Define a Constructor Function (Constructor Function act as a blueprint to define new functions quickly)(constructor method must be defined inside class)
+/*
+class Vegetable {
+    constructor(name) {
+        this.name = name;
+    }
+}
+
+const carrot = new Vegetable('carrot');
+console.log(carrot.name);
+*/
+
+// Use getters and setters to Control Access to an Object
 
