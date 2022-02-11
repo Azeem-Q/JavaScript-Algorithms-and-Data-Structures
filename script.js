@@ -1682,15 +1682,24 @@ console.log(carrot.name);
 */
 
 // Use getters and setters to Control Access to an Object
-
+/*
 class Thermostat {
     constructor(f) {
         this._f = f;
+    }   get temperature() {
+            return (5 / 9) * (this._f - 32);
+    }   set temperature(c) {
+            return this._f = (c * 9) / 5 + 32;
     }
-}
+}   
 
-get celsius() {
-    return (5 / 9) * (this._f - 32);
-}
+const thermos = new Thermostat(76);
+let temp = thermos.temperature;
+console.log(temp);
+thermos.temperature = 26;
+temp = thermos.temperature;
+console.log(temp);
+*/
 
-set
+// Create a Module Script
+
