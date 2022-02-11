@@ -1702,4 +1702,8 @@ console.log(temp);
 */
 
 // Create a Module Script
+/*
+<script type="module" src="index.js"></script>
+*/
 
+// Use export to Share a Code Block
