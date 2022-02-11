@@ -1719,6 +1719,14 @@ const lowercaseString = (string) => {
 export {uppercaseString, lowercaseString};
 */
 // Reuse JavaScript Code Using import
-
+/*
 import {uppercaseString, lowercaseString} from './string_functions.js'
- console.log(uppercaseString('asd'))
+console.log(uppercaseString('asd'));
+*/
+
+// Use * to Import Everything from a File
+/*
+import * as stringFunctions from './string_functions.js';
+*/
+
+// Create an Export Fallback with export default
