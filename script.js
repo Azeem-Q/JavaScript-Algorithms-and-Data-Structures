@@ -1730,3 +1730,11 @@ import * as stringFunctions from './string_functions.js';
 */
 
 // Create an Export Fallback with export default
+/*
+export default function subtract(x, y) {
+    return x - y;
+}
+*/
+
+// Import a Default Export
+
