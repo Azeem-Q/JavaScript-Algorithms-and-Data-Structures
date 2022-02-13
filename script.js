@@ -1354,6 +1354,8 @@ function rangeOfNumbers(startNum, endNum) {
 console.log(rangeOfNumbers(1, 10));
 */
 
+// JS ES6
+
 // Compare Scopes of the var and let Keywords
 /*
 function checkScope() {
@@ -1737,4 +1739,64 @@ export default function subtract(x, y) {
 */
 
 // Import a Default Export
+/*
+import subtract from './string_functions.js';
+console.log(subtract(7, 4));
+*/
 
+// Create a JavaScript Promise
+/*
+const makeServerRequest = new Promise((resolve, reject) => {
+
+});
+*/
+
+// Complete a Promise with resolve and reject
+/*
+const makeServerRequest = new Promise((resolve, reject) => {
+    let responseFromServer = true;
+    if (responseFromServer) {
+        resolve('We got the data');
+    }   else {
+        reject('Data not received');
+    }
+});
+*/
+
+// Handle a Fulfilled Promise with then
+/*
+const makeServerRequest = new Promise((resolve, reject) => {
+    let responseFromServer = true;
+    if (responseFromServer) {
+        resolve('We got the data');
+    }   else {
+        reject('Data not received');
+    }
+});
+
+makeServerRequest.then(result => {
+    console.log(result)
+});
+*/
+
+// Handle a Rejected Promise with catch
+/*
+const makeServerRequest = new Promise((resolve, reject) => {
+    let responseFromServer = false;
+    if (responseFromServer) {
+        resolve('We got the data');
+    }   else {
+        reject('Data not received');
+    }
+});
+
+makeServerRequest.then(result => {
+    console.log(result);
+})  .catch(error => {
+    console.log(error);
+});
+*/
+
+// JS Regex
+
+// Using the Test Method
