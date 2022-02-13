@@ -1,3 +1,5 @@
+// Basic JS
+
 // Comment Your JavaScript Code
 
 // This is an in-line comment
@@ -1800,3 +1802,4 @@ makeServerRequest.then(result => {
 // JS Regex
 
 // Using the Test Method
+
