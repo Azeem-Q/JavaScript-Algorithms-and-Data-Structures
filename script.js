@@ -1802,4 +1802,22 @@ makeServerRequest.then(result => {
 // JS Regex
 
 // Using the Test Method
+/*
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+let result = myRegex.test(myString);
+
+console.log(result);
+*/
+
+// Match Literal Strings
+/*
+let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
+let waldoRegex = /Waldo/;
+let result = waldoRegex.test(waldoIsHiding);
+
+console.log(result);
+*/
+
+// Match a Literal String with Different Possibilities
 
