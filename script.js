@@ -1838,4 +1838,31 @@ console.log(result);
 */
 
 // Extract Matches
+/*
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/;
+let result = extractStr.match(codingRegex);
+
+console.log(result);
+*/
+
+// Find More Than the First Match
+/*
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /twinkle/gi;
+let result = twinkleStar.match(starRegex);
+
+console.log(result);
+*/
+
+// Match Anything with Wildcard Period
+/*
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/;
+let result = unRegex.test(exampleStr);
+
+console.log(result);
+*/
+
+// Match Single Character with Multiple Possibilities
 
