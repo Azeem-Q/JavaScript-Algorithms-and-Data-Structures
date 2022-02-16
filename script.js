@@ -1820,4 +1820,22 @@ console.log(result);
 */
 
 // Match a Literal String with Different Possibilities
+/*
+let petString = "James has a pet cat.";
+let petRegex = /dog|cat|bird|fish/;
+let result = petRegex.test(petString);
+
+console.log(result);
+*/
+
+// Ignore Case While Matching
+/*
+let myString = "freeCodeCamp";
+let fccRegex = /freecodecamp/i;
+let result = fccRegex.test(myString);
+
+console.log(result);
+*/
+
+// Extract Matches
 
