@@ -1874,3 +1874,74 @@ console.log(result);
 */
 
 // Match Letters of the Alphabet
+/*
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/gi;
+let result = quoteSample.match(alphabetRegex);
+
+console.log(result);
+*/
+
+// Match Numbers and Letters of the Alphabet
+/*
+let quoteSample = "Blueberry 3.141592653s are delicious.";
+let myRegex = /[h-s2-6]/gi;
+let result = quoteSample.match(myRegex);
+
+console.log(result);
+*/
+
+// Match Single Characters Not Specified
+/*
+let quoteSample = "3 blind mice.";
+let myRegex = /[^aeiou0-9]/gi;
+let result = quoteSample.match(myRegex);
+
+console.log(result);
+*/
+
+// Match Characters that Occur One or More Times
+/*
+let difficultSpelling = "Mississippi";
+let myRegex = /s+/g;
+let result = difficultSpelling.match(myRegex);
+
+console.log(result);
+*/
+
+// Match Characters that Occur Zero or More Times
+/*
+let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!"
+let chewieRegex = /Aa*/;    /*
+let result = chewieQuote.match(chewieRegex);
+
+console.log(result);
+*/
+
+// Find Characters with Lazy Matching
+/*
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<.*?>/;
+let result  = text.match(myRegex);
+
+console.log(result);
+*/
+
+// Find One or More Criminals in a Hunt
+/*
+let str1 = 'C';
+let str2 = 'CC';
+let str3 = 'P1P5P4CCCcP2P6P3';
+let str4 = 'P6P2P7P4P5CCCCCP3P1'
+let str5 = ''
+let str6 = 'P1P2P3'
+let str7 = 'P2P1P5P4CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCP3'
+
+let reCriminals = /C+/g;
+let result = str7.match(reCriminals);
+
+console.log(result);
+*/
+
+// Match Beginning String Patterns
+
