@@ -2000,7 +2000,21 @@ console.log(result);
 // Restrict Possible Usernames
 
 let username = "JackOfAllTrades";
-let userCheck = /change/;
-let result = userCheck.test(username);
+let username2 = "JACK";
+let username3 = "J";
+let username4 = "Jo";
+let username5 = "Oceans11";
+let username6 = "RegexGuru";
+let username7 = "007";
+let username8 = "9"
+let username9 = "A1"
+let username10 = "BadUs3rnam3";
+let username11 = "Z97";
+let username12 = "c57bT3";
+let username13 = "AB1"
+let username14 = "J%4"
+let userCheck = /^([a-zA-Z][^\d])|([0-9]$){2,}/;
+let result = userCheck.test(username7);
+let rcheck = username.match(userCheck);
 
-console.log(result);
+console.log(rcheck);
