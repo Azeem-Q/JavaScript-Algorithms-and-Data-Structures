@@ -2013,9 +2013,9 @@ let username11 = "Z97";
 let username12 = "c57bT3";
 let username13 = "AB1"
 let username14 = "J%4"
-let userCheck = /(^[a-zA-Z][0-9]+$)/g       //^[a-zA-Z]{2,}|[\d]$|/;
-let result = userCheck.test(username4);
-let rcheck = username9.match(userCheck);
+let userCheck = /^[a-zA-Z]{2,}$|(^[a-zA-Z]+([0-9]+){2,}$)|^[a-zA-Z]{2}/g       //^[a-zA-Z]{2,}|[\d]$|(^[a-zA-Z]+$){1,}|(^[a-zA-Z]+\d+$){2,}/;
+let result = userCheck.test(username12);
+let rcheck = username13.match(userCheck);
 
 console.log(rcheck);
 console.log(result);
