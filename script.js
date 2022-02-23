@@ -2079,3 +2079,9 @@ console.log(result, result2);
 
 // Positive and Negative Lookahead
 
+let sampleWord = "bana12";
+let pwRegex = /(?=\S{6,})(?=\d{2,})/g
+let result = pwRegex.test(sampleWord);
+let result2 = sampleWord.match(pwRegex);
+
+console.log(result2, result);
