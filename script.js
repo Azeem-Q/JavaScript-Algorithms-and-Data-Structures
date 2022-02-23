@@ -2098,10 +2098,14 @@ console.log(result2, result);
 */
 
 // Reuse Patterns Using Capture Groups
-
-let repeatNum = "42 42 42 42";
-let reRegex = /(\d+?) \1 \1{3}/;
+/*
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+) \1 \1$/;
 let result = reRegex.test(repeatNum);
 let result2 = repeatNum.match(reRegex);
 
 console.log(result, result2);
+*/
+
+// Use Capture Groups to Search and Replace
+
