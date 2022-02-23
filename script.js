@@ -2022,3 +2022,48 @@ console.log(result);
 */
 
 // Match Whitespace
+/*
+let sample = "Whitespace is important in seperating words";
+let countWhiteSpace = /\s/g;
+let result = sample.match(countWhiteSpace);
+
+console.log(result);
+*/
+
+// Match Non-Whitespace Characters
+/*
+let sample = "Whitespace is important in seperating words";
+let countNonWhiteSpace = /\S/g;
+let result = sample.match(countNonWhiteSpace);
+
+console.log(result);
+*/
+
+// Specify Upper and Lower Number of Matches
+/*
+let ohStr = "Ohhh no";
+let ohRegex = /Oh{3,6} no/g;
+let result = ohRegex.test(ohStr);
+
+console.log(result);
+*/
+
+// Specify Only the Lower Number of Matches
+/*
+let haStr = "Hazzzzah";
+let haRegex = /Haz{4,}ah/;
+let result = haRegex.test(haStr);
+
+console.log(result);
+*/
+
+// Specify Exact Number of Matches
+/*
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/;
+let result = timRegex.test(timStr);
+
+console.log(result);
+*/
+
+// Check for All or None
