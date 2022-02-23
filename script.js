@@ -2078,10 +2078,30 @@ console.log(result, result2);
 */
 
 // Positive and Negative Lookahead
-
-let sampleWord = "bana12";
-let pwRegex = /(?=\w{4,})(?=\d{2,})/g
+/*
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6,})(?=\D*\d{2,})/g
 let result = pwRegex.test(sampleWord);
 let result2 = sampleWord.match(pwRegex);
 
 console.log(result2, result);
+*/
+
+// Check For Mixed Grouping of Characters
+/*
+let myString = "Eleanor Roosevelt";
+let myRegex = /(Franklin|Eleanor) ([\S]* |[\s]*)Roosevelt$/;
+let result = myRegex.test(myString);
+let result2 = myString.match(myRegex);
+
+console.log(result2, result);
+*/
+
+// Reuse Patterns Using Capture Groups
+
+let repeatNum = "42 42 42 42";
+let reRegex = /(\d+?) \1 \1{3}/;
+let result = reRegex.test(repeatNum);
+let result2 = repeatNum.match(reRegex);
+
+console.log(result, result2);
