@@ -2067,3 +2067,15 @@ console.log(result);
 */
 
 // Check for All or None
+/*
+let favWord = "favorite";
+let favWordBrit = "favourite";
+let favRegex = /favou?rite/;
+let result = favRegex.test(favWord);
+let result2 = favRegex.test(favWordBrit);
+
+console.log(result, result2);
+*/
+
+// Positive and Negative Lookahead
+
