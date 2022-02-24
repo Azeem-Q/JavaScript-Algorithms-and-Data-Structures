@@ -2118,9 +2118,16 @@ console.log(result);
 */
 
 // Remove Whitespace from Start and End
-
+/*
 let hello = "   Hello, World!  ";
-let wsRegex = /(\s)(\w+)\s(\w+)\s/;
-let result = hello.replace(wsRegex, "$1 $2")
+let wsRegex = /(\s+)(\s+)/g;
+let result = hello.replace(wsRegex, "")
+//let result = hello.match(wsRegex);
 
 console.log(result);
+*/
+
+// JS Debugging
+
+// Use the JavaScript Console to Check the Value of a Variable
+
