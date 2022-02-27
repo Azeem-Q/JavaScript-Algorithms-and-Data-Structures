@@ -2264,4 +2264,30 @@ myFunc();
 // JS Basic Data Structures
 
 // Use an Array to Store a Collection of Data
+/*
+let yourArray = [1, 'two', true, 3, 4];
+console.log(yourArray.length);
+*/
+
+// Access an Array's Contents Using Bracket Notation
+/*
+let myArray = ["a", "b", "c", "d"];
+myArray[1] = 2;
+
+console.log(myArray);
+*/
+
+// Add Items to an Array with push() and unshift()
+/*
+function mixedNumbers(arr) {
+    arr.unshift('I', 2, 'three');
+    arr.push(7, 'VIII', 9);
+    return arr;
+}
+
+
+console.log(mixedNumbers(['IV', 5, 'six']));
+*/
+
+// Remove Items from an Array with pop() and shift()
 
