@@ -2487,7 +2487,7 @@ console.log(isEveryoneHere(users));
 */
 
 // Iterate Through the Keys of an Object with a for...in Statement
-
+/*
 const users = {
     Alan: {
       online: false
@@ -2498,19 +2498,83 @@ const users = {
     Sarah: {
       online: false
     }
-  };
+};
 
-  function countOnline(userObj) {
-      let ol = 0;
-      for (let user in users) {
-          console.log(user);
-          if (user['online'] == true) {
-              ol += 1;
-          } else {
-              continue;
-          }
-      }
-      return ol;
-  }
+function countOnline(userObj) {
+    let ol = 0;
+    for (let user in users) {
+        //console.log(user);
+        if (userObj[user].online == true) {
+            ol += 1;
+        }   else {
+            continue;
+        }
+    }
+    return ol;
+}
 
-  console.log(countOnline(users));
+console.log(countOnline(users));
+*/
+
+// Generate an Array of All Object Keys with Object.keys()
+/*
+let users = {
+    Alan: {
+        age: 27,
+        online: false
+    },
+    Jeff: {
+        age:32,
+        online: true
+    },
+    Sarah: {
+        age: 48,
+        online: false
+    },
+    Ryan: {
+        age: 19,
+        online: true
+    }
+};
+
+function getArrayOfUsers(obj) {
+    return Object.keys(obj);
+}
+
+console.log(getArrayOfUsers(users));
+*/
+
+// Modify an Array Stored in an Object
+/*
+let user = {
+    name: 'Kenneth',
+    age: 28,
+    data: {
+        username: 'kennethCodesAllDay',
+        joinDate: 'March 26, 2016',
+        organization: 'freeCodeCamp',
+        friends: [
+            'Sam',
+            'Kira',
+            'Tomo'
+        ],
+        location: {
+            city: 'San Francisco',
+            state: 'CA',
+            country: 'USA'
+        }
+    }
+};
+
+function addFriend(userObj, friend) {
+    userObj.data.friends.push(friend);
+    return userObj.data.friends;
+}
+
+console.log(addFriend(user, 'Pete'));
+*/
+
+// Basic Algorithm Scripting
+
+// Convert Celsius to Fahrenheit
+
