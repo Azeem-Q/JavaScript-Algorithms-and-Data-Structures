@@ -2601,4 +2601,35 @@ console.log(reverseString("hello"));
 */
 
 // Factorialize a Number
+/*
+function factorialize(num) {
+    let product = 1;
+    for (let n = 1; n <= num; n++) {
+        product *= n;
+    }
+    return product;
+}
+
+console.log(factorialize(5));
+*/
+
+// Find the Longest Word in a String
+/*
+function findLongestWordLength(str) {
+    let strArr = str.split(' ');
+    let maxLength = 0;
+    for (let i of strArr) {
+        if (maxLength < i.length) {
+            maxLength = i.length;
+        }   else {
+            continue;
+        }
+    }
+    return maxLength;
+}
+
+console.log(findLongestWordLength("The quick brown fox jumped over the lazy dog"));
+*/
+
+// Return Largest Numbers in Arrays
 
