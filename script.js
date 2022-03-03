@@ -2789,3 +2789,9 @@ console.log(getIndexToIns([2, 5, 10], 15));
 */
 
 // Mutations
+
+function mutation(arr) {
+
+}
+
+mutation(["hello", "hey"])
