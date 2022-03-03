@@ -2755,4 +2755,21 @@ console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
 */
 
 // Falsy Bouncer
+/*
+function bouncer(arr) {
+    let trueArr = []
+    for (let i of arr) {
+        if (Boolean(i) == true) {
+            trueArr.push(i);
+        }   else {
+            continue;
+        }
+    }
+    return trueArr;
+}
+
+console.log(bouncer([7, "ate", "", false, 9]));
+*/
+
+// Where do I Belong
 
