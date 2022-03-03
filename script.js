@@ -2789,15 +2789,48 @@ console.log(getIndexToIns([2, 5, 10], 15));
 */
 
 // Mutations
-
+/*
 function mutation(arr) {
-    let subarr1;
-    let subarr2;
+    let subarr = '';
     for (let i of arr) {
-        
+        subarr += i + ' ';
     }
+    subarr = subarr.trim();
+    subarr = subarr.toLowerCase();
+    let newArr = subarr.split(' ');
+    let finalArr = [];
+    for (let i of newArr[0]) {
+        for (let j of newArr[1]) {
+            if (newArr[0].indexOf(j) < 0) {
+                return false;
+            }   else {
+                continue;
+            }
+        }
+    }
+    return true;
 }
 
-console.log(mutation(["hello", "hello"]));
+console.log(mutation(["hello", "hey"]));
+*/
 
-let a = [];
+// Chunky Monkey
+/*
+function chunkArrayInGroups(arr, size) {
+    //arrLength = arr.length;
+    let subArr = [];
+    let newArr = [];
+    for (let i = 0; i < arr.length; i += size) {
+        subArr = arr.slice(i, size + i);
+        newArr.push(subArr);
+    }
+    return newArr;
+}
+
+console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5], 2));
+*/
+
+// Object Oriented Programming
+
+// Create a Basic JavaScript Object
+
