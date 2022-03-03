@@ -2833,4 +2833,22 @@ console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5], 2));
 // Object Oriented Programming
 
 // Create a Basic JavaScript Object
+/*
+let dog = {
+    name: 'Rocky',
+    numLegs: 4
+};
+*/
+
+// Use Dot Notation to Access the Properties of an Object
+/*
+let dog = {
+    name: "Spot",
+    numLegs: 4
+};
+
+console.log(dog.name, dog.numLegs);
+*/
+
+// Create a Method on an Object
 
