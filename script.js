@@ -2791,7 +2791,13 @@ console.log(getIndexToIns([2, 5, 10], 15));
 // Mutations
 
 function mutation(arr) {
-
+    let subarr1;
+    let subarr2;
+    for (let i of arr) {
+        
+    }
 }
 
-mutation(["hello", "hey"])
+console.log(mutation(["hello", "hello"]));
+
+let a = [];
