@@ -2632,4 +2632,55 @@ console.log(findLongestWordLength("The quick brown fox jumped over the lazy dog"
 */
 
 // Return Largest Numbers in Arrays
+/*
+function largestOfFour(arr) {
+    let arrOfLargest = [];
+    let largestNum = 0;
+    for (let subarr of arr) {
+        for (let i of subarr) {
+            if (largestNum < i) {
+                largestNum = i;
+            }   else if (largestNum == 0 && i < 0) {
+                largestNum = i;
+                continue;
+            }   else {
+                continue;
+            }
+        }
+        arrOfLargest.push(largestNum);
+        largestNum = 0;
+    }
+    return arrOfLargest;
+}
 
+console.log(largestOfFour([[17, 23, 25, 12], [25, 7, 34, 48], [4, -10, 18, 21], [-72, -3, -17, -10]]));
+*/
+
+// Confirm the Ending
+/*
+function confirmEnding(str, target) {
+    if (str.substring(str.length - target.length) == target) {
+        return true;
+    }   else {
+        return false;
+    }
+}
+
+console.log(confirmEnding("Congratulation", "on"));
+*/
+
+// Repeat a String Repeat a String
+
+function repeatStringNumTimes(str, num) {
+    let repeatStr = ""
+    if (num < 0) {
+        return '';
+    }   else {
+        for (let i = 0; i < num; i++){
+            repeatStr = repeatStr + str;;
+        }
+    }
+    return repeatStr;
+}
+
+console.log(repeatStringNumTimes("abc", 3));
