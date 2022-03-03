@@ -2670,17 +2670,89 @@ console.log(confirmEnding("Congratulation", "on"));
 */
 
 // Repeat a String Repeat a String
-
+/*
 function repeatStringNumTimes(str, num) {
     let repeatStr = ""
     if (num < 0) {
         return '';
     }   else {
         for (let i = 0; i < num; i++){
-            repeatStr = repeatStr + str;;
+            repeatStr += str;;
         }
     }
     return repeatStr;
 }
 
 console.log(repeatStringNumTimes("abc", 3));
+*/
+
+// Truncate a String
+/*
+function truncateString(str, num) {
+    if (str.length > num) {
+        return str.slice(0, num) + '...';
+    }   else {
+        return str;
+    }
+}
+
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
+*/
+
+// Finders Keepers
+/*
+function findElement(arr, func) {
+    for (let i of arr) {
+        if (func(i) == true) {
+            return i;
+        }   else {
+            continue;
+        }
+    }
+    return undefined;
+}
+
+console.log(findElement([1, 2, 3, 4], num => num % 2 === 0));
+*/
+
+// Boo who
+/*
+function booWho(bool) {
+    if (bool == true && typeof(bool) != "number" || bool == false && typeof(bool) != "number") {
+        return true;
+    }   else {
+        return false;
+    }
+}
+
+console.log(booWho(null));
+*/
+
+// Title Case a Sentence
+/*
+function titleCase(str) {
+    str = str.toLowerCase();
+    let strArr = str.split(' ');
+    let capitalStr = '';
+    for (let i of strArr) {
+        capitalStr += i.charAt(0).toUpperCase() + i.slice(1) + ' ';
+    }
+    return capitalStr.trim();
+}
+
+console.log(titleCase("I'm a little tea pot"));
+*/
+
+// Slice and Splice
+/*
+function frankenSplice(arr1, arr2, n) {
+    let mergedArr = arr2.slice(0);
+    mergedArr.splice(n, 0, ...arr1);
+    return mergedArr;
+}
+
+console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
+*/
+
+// Falsy Bouncer
+
