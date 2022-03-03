@@ -2772,4 +2772,20 @@ console.log(bouncer([7, "ate", "", false, 9]));
 */
 
 // Where do I Belong
+/*
+function getIndexToIns(arr, num) {
+    let sortedArr = arr.sort((a, b) => a - b);
+    for (let i of sortedArr) {
+        if (i >= num) {
+            return arr.indexOf(i);
+        }   else {
+            continue;
+        }
+    }
+    return sortedArr.length;
+}
 
+console.log(getIndexToIns([2, 5, 10], 15));
+*/
+
+// Mutations
