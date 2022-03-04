@@ -2917,4 +2917,24 @@ console.log(myHouse instanceof House);
 */
 
 // Understand Own Properties
+/*
+function Bird(name) {
+    this.name = name;
+    this.numLegs = 2;
+}
+
+let canary = new Bird("Tweety");
+let ownProps = [];
+
+
+for (let prop in canary) {
+    if (canary.hasOwnProperty(prop)) {
+        ownProps.push(prop);
+    }
+}
+
+console.log(ownProps);
+*/
+
+// Use Prototype Properties to Reduce Duplicate Code
 
