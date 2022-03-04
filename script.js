@@ -2937,4 +2937,39 @@ console.log(ownProps);
 */
 
 // Use Prototype Properties to Reduce Duplicate Code
+/*
+function Dog(name) {
+    this.name = name;
+}
+
+let beagle = new Dog("Snoopy");
+
+Dog.prototype.numLegs = 4;
+*/
+
+// Iterate Over All Properties
+/*
+function Dog(name) {
+    this.name = name;
+}
+
+Dog.prototype.numLegs = 4;
+
+let beagle = new Dog("Snoopy");
+
+let ownProps = [];
+let prototypeProps = [];
+
+for (let prop in beagle) {
+    if (beagle.hasOwnProperty(prop)) {
+        ownProps.push(prop);
+    }   else {
+        prototypeProps.push(prop);
+    }
+}
+console.log('ownProp', ownProps);
+console.log('prototypeProp', prototypeProps);
+*/
+
+// Understand the Constructor Property
 
