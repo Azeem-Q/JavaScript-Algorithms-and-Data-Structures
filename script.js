@@ -3151,8 +3151,4 @@ Bird.prototype.fly = function() {
     return "I am flying!";
 };
 
-<<<<<<< HEAD
 function 
-=======
-function 
->>>>>>> 102ecccd0a987a904b00fe01bb41b10b6fed38ed
