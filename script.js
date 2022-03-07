@@ -3143,12 +3143,25 @@ let beagle = new Dog();
 beagle.bark();
 */
 
-// Override Inherited Methods
-
+// Override Inherited Methods (JS Look for methods from child to parent)
+/*
 function Bird() {}
 
 Bird.prototype.fly = function() {
     return "I am flying!";
 };
 
-function 
+function Penguin() {}
+Penguin.prototype = Object.create(Bird.prototype);
+Penguin.prototype.constructor = Penguin;
+
+Penguin.prototype.fly = function() {
+    return "Alas, this is a flightless bird."
+};
+
+let penguin = new Penguin();
+console.log(penguin.fly());
+*/
+
+// Use a Mixin to Add Common Behavior Between Unrelated Objects
+
