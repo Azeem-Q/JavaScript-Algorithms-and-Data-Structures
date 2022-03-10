@@ -3294,7 +3294,7 @@ console.log(
 // Understand the Hazards of Using Imperative Code
 
 const Window = function(tabs) {
-    this.tab = tabs;
+    this.tabs = tabs;
 };
 
 Window.prototype.join = function(otherWindow) {
