@@ -3292,7 +3292,7 @@ console.log(
 */
 
 // Understand the Hazards of Using Imperative Code
-
+/*
 const Window = function(tabs) {
     this.tabs = tabs;
 };
@@ -3309,7 +3309,7 @@ Window.prototype.tabOpen = function(tab) {
 
 Window.prototype.tabClose = function(index) {
     const tabsBeforeIndex = this.tabs.splice(0, index);
-    const tabsAfterIndex = this.tabs.splice(index + 1);
+    const tabsAfterIndex = this.tabs.splice(1);
     this.tabs = tabsBeforeIndex.concat(tabsAfterIndex);
     return this;
 };
@@ -3325,3 +3325,9 @@ const finalTabs = socialWindow.tabOpen()
 .join(workWindow.tabClose(1).tabOpen());
 
 console.log(finalTabs.tabs);
+
+//console.log(workWindow.tabs.splice(1 + 1));
+*/
+
+// Avoid Mutations and Side Effects Using Functional Programming
+
