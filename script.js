@@ -3330,4 +3330,26 @@ console.log(finalTabs.tabs);
 */
 
 // Avoid Mutations and Side Effects Using Functional Programming
+/*
+let fixedValue = 4;
+
+function incrementer() {
+    return fixedValue + 1;
+}
+
+console.log(incrementer());
+*/
+
+// Pass Arguments to Avoid External Dependence in a Function
+/*
+let fixedValue = 4;
+
+function incrementer(value) {
+    return value + 1;
+}
+
+console.log(incrementer(fixedValue));
+*/
+
+// Refactor Global Variables Out of Functions
 
