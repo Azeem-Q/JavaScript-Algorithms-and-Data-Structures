@@ -3520,7 +3520,7 @@ console.log(new_s);
 */
 
 // Use the filter Method to Extract Data from an Array
-
+/*
 const watchList = [
     {
       "Title": "Inception",
@@ -3638,14 +3638,15 @@ const ratings = watchList.map(movie => ({title: movie["Title"], rating: movie["i
 
 //console.log(JSON.stringify(ratings));
 
-const filteredList = ratings.filter(movie => {(
+const filteredList = ratings.filter(movie => {
     let ratingNumber = parseFloat(movie.rating); 
     if (ratingNumber >= 8.0) {
         return movie;
-    }   else {
-        continue;
     }
-)})
+})
 
-//console.log(filteredList);
+console.log(JSON.stringify(filteredList));
+*/
+
+// Implement the filter Method on a Prototype
 
