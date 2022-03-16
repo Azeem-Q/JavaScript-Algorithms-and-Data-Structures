@@ -3670,4 +3670,15 @@ console.log(new_s);
 */
 
 // Return Part of an Array Using the slice Method
+/*
+function sliceArray(anim, beginSlice, endSlice) {
+    return anim.slice(beginSlice, endSlice);
+}
+
+const inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
+
+console.log(sliceArray(inputAnim, 1, 3));
+*/
+
+// Remove Elements from an Array Using slice Instead of splice
 
