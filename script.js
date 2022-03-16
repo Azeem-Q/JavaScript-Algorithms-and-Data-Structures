@@ -3853,4 +3853,22 @@ console.log(getRating(watchList));
 */
 
 // Use Higher-Order Functions map, filter, or reduce to Solve a Complex Problem
+/*
+const squareList = arr => {
+    let finalArr = arr.filter(a => {
+        if (a >=0 && a % 1 === 0) {
+            return a;
+        }
+    })
+    return finalArr.map(a => {
+        return Math.pow(a, 2);
+    });
+};
+
+const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
+
+console.log(squaredIntegers);
+*/
+
+// Sort an Array Alphabetically using the sort Method
 
