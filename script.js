@@ -3681,4 +3681,39 @@ console.log(sliceArray(inputAnim, 1, 3));
 */
 
 // Remove Elements from an Array Using slice Instead of splice
+/*
+function nonMutatingSplice(cities) {
+    return cities.slice(0, 3);
+}
+
+const inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
+
+console.log(nonMutatingSplice(inputCities));
+*/
+
+// Combine Two Arrays Using the concat Method
+/*
+function nonMutatingConcat(original, attach) {
+    return original.concat(attach);
+}
+
+const first = [1, 2, 3];
+const second = [4, 5];
+
+console.log(nonMutatingConcat(first, second));
+*/
+
+// Add Elements to the End of an Array Using concat Instead of push
+/*
+function nonMutatingPush(original, newItem) {
+    return original.concat(newItem);
+}
+
+const first = [1, 2, 3];
+const second = [4, 5];
+
+console.log(nonMutatingPush(first, second));
+*/
+
+// Use the reduce Method to Analyze Data
 
