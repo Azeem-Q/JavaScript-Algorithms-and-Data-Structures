@@ -3649,4 +3649,25 @@ console.log(JSON.stringify(filteredList));
 */
 
 // Implement the filter Method on a Prototype
+/*
+const s = [23, 65, 98, 5];
+
+Array.prototype.myFilter = function(callback) {
+    const newArray = [];
+    for (let i of this) {
+        if (callback(i) == true) {
+            newArray.push(i);
+        }
+    }
+    return newArray;
+}
+
+const new_s = s.myFilter(function(item) {
+    return item % 2 ===1;
+});
+
+console.log(new_s);
+*/
+
+// Return Part of an Array Using the slice Method
 
