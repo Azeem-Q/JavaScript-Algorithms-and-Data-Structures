@@ -3882,3 +3882,18 @@ console.log(alphabeticalOrder(["a", "d", "c", "a", "z", "g"]));
 */
 
 // Return a Sorted Array Without Changing the Original Array
+/*
+const globalArray = [5, 6, 3, 2, 9];
+
+function nonMutatingSort(arr) {
+    let newArr = arr.slice(0);
+    return newArr.sort((a, b) => {
+        return a - b;
+    })
+}
+
+console.log(nonMutatingSort(globalArray));
+*/
+
+// Split a String into an Array Using the split Method
+
