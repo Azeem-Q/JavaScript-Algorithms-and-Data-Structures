@@ -3871,4 +3871,14 @@ console.log(squaredIntegers);
 */
 
 // Sort an Array Alphabetically using the sort Method
+/*
+function alphabeticalOrder(arr) {
+    return arr.sort((a, b) => {
+        return a === b ? 0 : a > b ? 1 : -1;
+    });
+}
 
+console.log(alphabeticalOrder(["a", "d", "c", "a", "z", "g"]));
+*/
+
+// Return a Sorted Array Without Changing the Original Array
