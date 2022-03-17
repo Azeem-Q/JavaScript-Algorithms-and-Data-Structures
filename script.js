@@ -3972,3 +3972,14 @@ console.log(add(10)(20)(30));
 
 // Sum All Numbers in a Range
 
+function sumAll(arr) {
+    arr.sort((a, b) => {
+        return a - b;
+    });
+    let completeArr = [];
+    for (let i of arr) {
+        
+    }
+}
+
+console.log(sumAll([4, 1]));
