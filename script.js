@@ -3956,4 +3956,19 @@ console.log(checkPositive([1, 2, 3, -4, 5]));
 */
 
 // Introduction to Currying and Partial Application
+/*
+function add(x) {
+    return function(y) {
+        return function(z) {
+            return x + y + z;
+        }
+    }
+}
+
+console.log(add(10)(20)(30));
+*/
+
+// JS Intermediate Algorithm Scripting
+
+// Sum All Numbers in a Range
 
