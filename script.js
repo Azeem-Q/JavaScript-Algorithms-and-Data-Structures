@@ -3916,3 +3916,11 @@ console.log(sentensify("May-the-force-be-with-you"));
 
 // Apply Functional Programming to Convert Strings to URL Slugs
 
+function urlSlug(title) {
+    let lowerCase = title.toLowerCase();
+    lowerCase = lowerCase.trim();
+    let arr = lowerCase.split(' ');
+    return arr.join('-');
+}
+
+console.log(urlSlug(" Winter Is  Coming"));
