@@ -4046,12 +4046,15 @@ console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
 
 function whatIsInAName(collection, source) {
     const arr = []
-    collection.map(a => {
-        return arr.push(a);
-    });
+    collection.find(a => {
+        if (source in collection) {
+            return arr.push(a);
+        }
+    })
     return arr;
 }
 
 let answer = whatIsInAName([{first: "Romeo", last: "Montague"}, {first: "Mercutio", last: null}, {first: "Tybalt", last: "Capulet"}], {last: "Capulet"});
 
 console.log(JSON.stringify(answer));
+
