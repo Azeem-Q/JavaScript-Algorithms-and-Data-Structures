@@ -4014,23 +4014,44 @@ console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
 */
 
 // Seek and Destroy
-
+/*
 function destroyer(arr) {
     let argsArr = [];
     for (let i = 1; i < arguments.length; i++) {
         argsArr.push(arguments[i]);
     }
-    //while (arr.some(argsArr) == true); check!
+    while (arr.some(i => {
+        for (let j of argsArr) {
+            return i == j;
+        }
+    }) == true) {
+        for (let arg of argsArr) {
+            let arrIndex = arr.indexOf(arg);
+            if (arrIndex >= 0) {
+                arr.splice(arrIndex, 1);
+            }   else {
+                continue
+            }
+        }
+    } 
 
     
     return arr;
 }
 
-destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
+*/
 
-let a = [1, 2, 3, 1, 2, 3];
-let b = [2, 3];
+// Wherefore art thou
 
-console.log(a.some(function(a){
-    return a > 3;
-})
+function whatIsInAName(collection, source) {
+    const arr = []
+    collection.map(a => {
+        return arr.push(a);
+    });
+    return arr;
+}
+
+let answer = whatIsInAName([{first: "Romeo", last: "Montague"}, {first: "Mercutio", last: null}, {first: "Tybalt", last: "Capulet"}], {last: "Capulet"});
+
+console.log(JSON.stringify(answer));
