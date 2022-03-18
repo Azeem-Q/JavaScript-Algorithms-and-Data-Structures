@@ -4027,3 +4027,10 @@ function destroyer(arr) {
 }
 
 destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+
+let a = [1, 2, 3, 1, 2, 3];
+let b = [2, 3];
+
+console.log(a.some(function(a){
+    return a > 3;
+})
