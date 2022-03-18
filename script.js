@@ -3971,15 +3971,22 @@ console.log(add(10)(20)(30));
 // JS Intermediate Algorithm Scripting
 
 // Sum All Numbers in a Range
-
+/*
 function sumAll(arr) {
     arr.sort((a, b) => {
         return a - b;
     });
     let completeArr = [];
-    for (let i of arr) {
-        
+    for (let i = arr[0]; i <= arr[1]; i++) {
+        completeArr.push(i);        
     }
+    return completeArr.reduce((a, b) => {
+        return a + b;
+    }, 0)
 }
 
-console.log(sumAll([4, 1]));
+console.log(sumAll([10, 5]));
+*/
+
+// Diff Two Arrays
+
