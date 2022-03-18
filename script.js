@@ -3989,4 +3989,41 @@ console.log(sumAll([10, 5]));
 */
 
 // Diff Two Arrays
+/*
+function diffArray(arr1, arr2) {
+    const newArr = [];
+    for (let i of arr1) {
+        if (arr2.indexOf(i) >= 0) {
+            continue;
+        }   else {
+            newArr.push(i);
+        }
+    }
+    for (let i of arr2) {
+        if (arr1.indexOf(i) >= 0) {
+            continue;
+        }   else {
+            newArr.push(i);
+        }
+    }
 
+    return newArr;
+}
+
+console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
+*/
+
+// Seek and Destroy
+
+function destroyer(arr) {
+    let argsArr = [];
+    for (let i = 1; i < arguments.length; i++) {
+        argsArr.push(arguments[i]);
+    }
+    //while (arr.some(argsArr) == true); check!
+
+    
+    return arr;
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
