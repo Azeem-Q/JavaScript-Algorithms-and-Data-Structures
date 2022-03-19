@@ -4046,15 +4046,20 @@ console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
 
 function whatIsInAName(collection, source) {
     const arr = []
-    collection.find(a => {
-        if (source in collection) {
-            return arr.push(a);
+    let sourceKeys = Object.keys(source);
+    //console.log(sourceArr);
+    collection.filter(a => {
+        //console.log(a)
+        for (let i of sourceKeys) {
+            if (source[i] == a[i]) {
+                arr.push(a);
+            }
         }
     })
     return arr;
 }
 
-let answer = whatIsInAName([{first: "Romeo", last: "Montague"}, {first: "Mercutio", last: null}, {first: "Tybalt", last: "Capulet"}], {last: "Capulet"});
+let answer = whatIsInAName([{ "apple": 1, "bat": 2 }, { "bat": 2 }, { "apple": 1, "bat": 2, "cookie": 2 }], { "apple": 1, "bat": 2 });
 
 console.log(JSON.stringify(answer));
 
