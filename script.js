@@ -4047,7 +4047,7 @@ console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
 function whatIsInAName(collection, source) {
     const arr = []
     let sourceKeys = Object.keys(source);
-    //console.log(sourceArr);
+    //let sKeysLength = sourceKeys.length;
     collection.filter(a => {
         //console.log(a)
         for (let i of sourceKeys) {
