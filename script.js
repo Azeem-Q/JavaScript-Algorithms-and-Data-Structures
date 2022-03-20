@@ -4061,5 +4061,20 @@ function whatIsInAName(collection, source) {
 
 let answer = whatIsInAName([{ "apple": 1, "bat": 2 }, { "bat": 2 }, { "apple": 1, "bat": 2, "cookie": 2 }], { "apple": 1, "bat": 2 });
 
-console.log(JSON.stringify(answer));
+//console.log(JSON.stringify(answer));
 
+let a = [{ "apple": 1, "bat": 2 }, { "bat": 2 }, { "apple": 1, "bat": 2, "cookie": 2 }];
+
+let b = { "apple": 1, "bat": 2 }
+
+console.log(JSON.stringify(a).includes(JSON.stringify(b)));
+let c = [];
+for (let i of a) {
+    console.log(i);
+    if (JSON.stringify(i).includes(JSON.stringify(b)) == true) {
+        c.push(i);
+    }
+}
+
+console.log(JSON.stringify(a[2]), JSON.stringify(b));
+console.log('{"apple":1,"bat":2,"cookie":2}'.includes('{"apple":1,"bat":2}'));
