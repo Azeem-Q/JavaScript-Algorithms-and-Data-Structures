@@ -4050,10 +4050,18 @@ function whatIsInAName(collection, source) {
     //let sKeysLength = sourceKeys.length;
     collection.filter(a => {
         //console.log(a)
+        let trueArr = []
         for (let i of sourceKeys) {
             if (source[i] == a[i]) {
-                arr.push(a);
+                trueArr.push(true);
+            }   else {
+                trueArr.push(false);
             }
+        }
+        if (trueArr.every(a => {
+            a == true
+        })) {
+            arr.push(a);
         }
     })
     return arr;
@@ -4061,7 +4069,7 @@ function whatIsInAName(collection, source) {
 
 let answer = whatIsInAName([{ "apple": 1, "bat": 2 }, { "bat": 2 }, { "apple": 1, "bat": 2, "cookie": 2 }], { "apple": 1, "bat": 2 });
 
-//console.log(JSON.stringify(answer));
+console.log(JSON.stringify(answer));
 
 let a = [{ "apple": 1, "bat": 2 }, { "bat": 2 }, { "apple": 1, "bat": 2, "cookie": 2 }];
 
