@@ -4043,7 +4043,7 @@ console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
 */
 
 // Wherefore art thou
-
+/*
 function whatIsInAName(collection, source) {
     const arr = []
     let sourceKeys = Object.keys(source);
@@ -4058,8 +4058,9 @@ function whatIsInAName(collection, source) {
                 trueArr.push(false);
             }
         }
+        //console.log(trueArr);
         if (trueArr.every(a => {
-            a == true
+            return a == true
         })) {
             arr.push(a);
         }
@@ -4070,19 +4071,13 @@ function whatIsInAName(collection, source) {
 let answer = whatIsInAName([{ "apple": 1, "bat": 2 }, { "bat": 2 }, { "apple": 1, "bat": 2, "cookie": 2 }], { "apple": 1, "bat": 2 });
 
 console.log(JSON.stringify(answer));
+*/
 
-let a = [{ "apple": 1, "bat": 2 }, { "bat": 2 }, { "apple": 1, "bat": 2, "cookie": 2 }];
+// Spinal Tap Case
 
-let b = { "apple": 1, "bat": 2 }
+function spinalCase(str) {
 
-console.log(JSON.stringify(a).includes(JSON.stringify(b)));
-let c = [];
-for (let i of a) {
-    console.log(i);
-    if (JSON.stringify(i).includes(JSON.stringify(b)) == true) {
-        c.push(i);
-    }
+    return str;
 }
 
-console.log(JSON.stringify(a[2]), JSON.stringify(b));
-console.log('{"apple":1,"bat":2,"cookie":2}'.includes('{"apple":1,"bat":2}'));
+spinalCase('This Is Spinal Tap');
