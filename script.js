@@ -4100,4 +4100,23 @@ console.log(spinalCase('The_Andy_Griffith_Show'));
 */
 
 // Pig Latin
+/*
+function translatePigLatin(str) {
+    if (str[0] == 'a' || str[0] == 'e' || str[0] == 'i' || str[0] == 'o' || str[0] == 'u') {
+        return str + 'way'
+    }   else {
+        for (let i = 0; i < str.length; i++) {
+            if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u') {
+                return str.slice(i) + str.slice(0, i) + 'ay'
+            }
+        }
+    }
+    return str + 'ay';
+    
+}
+
+console.log(translatePigLatin("rhythm"));
+*/
+
+// Search and Replace
 
