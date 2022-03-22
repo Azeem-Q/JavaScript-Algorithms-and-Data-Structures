@@ -4119,4 +4119,22 @@ console.log(translatePigLatin("rhythm"));
 */
 
 // Search and Replace
+/*
+function myReplace(str, before, after) {
+    after = after.toLowerCase();
+    let strArr = str.split(' ');
+    let replaceIndex = strArr.indexOf(before);
+    if (strArr[replaceIndex] != strArr[replaceIndex].toLowerCase()) {
+        after = after[0].toUpperCase() + after.slice(1);
+    }
+    //console.log(replaceIndex)
+    strArr.splice(replaceIndex, 1, after);
+    return strArr.join(' ');
+    //console.log(strArr);
+}
+
+console.log(myReplace("His name is Tom", "Tom", "john"));
+*/
+
+// DNA Pairing
 
