@@ -4074,10 +4074,30 @@ console.log(JSON.stringify(answer));
 */
 
 // Spinal Tap Case
-
+/*
 function spinalCase(str) {
-
+    let strArr = str.split(' ');
+    for (let i = 0; i < strArr.length; i++) {
+        strArr[i] = strArr[i].replace(/([A-Z])/g, "-$1");
+    }
+    str = strArr.join(' ');
+    str = str.toLowerCase();
+    strArr = str.split(/[\W_]/);
+    //console.log(strArr);
+    //str = str.replace(/([A-Z])/g, "-$1");
+    //console.log(strArr);
+    for (let i = 0; i < strArr.length; i++) {
+        if (strArr[i] == '') {
+            strArr.splice(i, 1);
+        }
+    }
+    //console.log(strArr);
+    str = strArr.join('-');
     return str;
 }
 
-spinalCase('This Is Spinal Tap');
+console.log(spinalCase('The_Andy_Griffith_Show'));
+*/
+
+// Pig Latin
+
