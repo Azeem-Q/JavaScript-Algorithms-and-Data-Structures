@@ -4137,4 +4137,28 @@ console.log(myReplace("His name is Tom", "Tom", "john"));
 */
 
 // DNA Pairing
+/*
+function pairElement(str) {
+    let strArr = str.split('');
+    let dnaArr = []
+    for (let i of strArr) {
+        if (i == 'A') {
+            dnaArr.push([i, 'T']);
+        }   else if (i == 'T') {
+            dnaArr.push([i, 'A']);
+        }   else if (i == 'C') {
+            dnaArr.push([i, 'G']);
+        }   else if (i == 'G') {
+            dnaArr.push([i, 'C']);
+        }   else {
+            continue;
+        }
+    }
+    return dnaArr;
+}
+
+console.log(pairElement("ATCGA"));
+*/
+
+// Missing letters
 
