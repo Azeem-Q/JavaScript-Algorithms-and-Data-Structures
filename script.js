@@ -4185,4 +4185,18 @@ console.log(fearNotLetter("abcdefghjklmno"));
 */
 
 // Sorted Union
+/*
+function uniteUnique(arr) {
+    let argsArr = [...arguments]
+    let combinedArr = []
+    for (let i of argsArr) {
+        combinedArr.push(...i);        
+    }
+    return [...new Set(combinedArr)];
+}
+
+console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
+*/
+
+// Convert HTML Entities
 
