@@ -4200,3 +4200,13 @@ console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
 
 // Convert HTML Entities
 
+function convertHTML(str){
+    let strArr = str.split(' ');
+    let  encodedArr = [];
+    for (let i of strArr) {
+        encodedArr.push(encodeURIComponent(i));
+    }
+    return encodedArr.join(' ');
+}
+
+console.log(convertHTML("Dolce & Gabbana"));
