@@ -4199,14 +4199,37 @@ console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
 */
 
 // Convert HTML Entities
-
+/*
 function convertHTML(str){
-    let strArr = str.split(' ');
+    let strArr = str.split('');
+    //for (let i of strArr)
     let  encodedArr = [];
     for (let i of strArr) {
-        encodedArr.push(encodeURIComponent(i));
+        switch(i) {
+            case '<':
+                encodedArr.push('&lt;');
+                break;
+            case '>':
+                encodedArr.push('&gt;');
+                break;
+            case '&':
+                encodedArr.push('&amp;');
+                break;
+            case '"':
+                encodedArr.push('&quot;');
+                break;
+            case "'":
+                encodedArr.push('&apos;');
+                break;
+            default:
+                encodedArr.push(i);
+        }
     }
-    return encodedArr.join(' ');
+    return encodedArr.join('');
 }
 
-console.log(convertHTML("Dolce & Gabbana"));
+console.log(convertHTML('Stuff in "quotation marks"'));
+*/
+
+// Sum All Odd Fibonacci Numbers
+
