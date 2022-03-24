@@ -4161,4 +4161,28 @@ console.log(pairElement("ATCGA"));
 */
 
 // Missing letters
+/*
+function fearNotLetter(str) {
+    let completeArr = []
+    for (let i = "a".charCodeAt(0); i <= "z".charCodeAt(0); i++) {
+        completeArr.push(String.fromCharCode(i));
+    }
+    //console.log(completeArr);
+    let strArr = str.split('');
+    let startIndex = completeArr.indexOf(strArr[0]);
+    let endIndex = completeArr.indexOf(strArr[strArr.length - 1]);
+    //console.log(endIndex);
+    for (let i = startIndex; i <= endIndex; i++) {
+        if (strArr.indexOf(completeArr[i]) < 0) {
+            return completeArr[i];
+        }
+    }
+    //return undefined;
+    //console.log(strArr);
+}
+
+console.log(fearNotLetter("abcdefghjklmno"));
+*/
+
+// Sorted Union
 
