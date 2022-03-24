@@ -4255,3 +4255,22 @@ console.log(sumFibs(4000000));
 
 // Sum All Primes
 
+function sumPrimes(num) {
+    let primeArr = [1, 2];
+    for (let i = 2; i <= num; i++) {
+        if (i % i == 0) {
+            for (let j = 2; j < i; j++) {
+                let prime = 0;
+                if (i % j == 0) {
+                    prime += 1;
+            }
+            if (prime == 0) {
+                primeArr.push(i);
+            }
+            }
+        }
+    }
+    console.log(primeArr);
+}
+
+console.log(sumPrimes(10));
