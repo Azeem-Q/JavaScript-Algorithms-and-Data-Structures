@@ -4232,4 +4232,26 @@ console.log(convertHTML('Stuff in "quotation marks"'));
 */
 
 // Sum All Odd Fibonacci Numbers
+/*
+function sumFibs(num) {
+    let fibArr = [0, 1];
+    for (let i = fibArr[fibArr.length - 1]; i <= num; i = fibArr[fibArr.length - 1]) {
+        fibArr.push(fibArr[fibArr.length - 2] + fibArr[fibArr.length - 1]);
+    }
+    if (fibArr[fibArr.length - 1] > num) {
+        fibArr.pop();
+    }
+    let fibSum = 0;
+    for (let i of fibArr) {
+        if (i % 2 != 0) {
+            fibSum += i;
+        }
+    }
+    return fibSum;
+}
+
+console.log(sumFibs(4000000));
+*/
+
+// Sum All Primes
 
