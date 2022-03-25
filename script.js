@@ -4279,3 +4279,24 @@ console.log(sumPrimes(100));
 */
 
 // Smallest Common Multiple
+
+function smallestCommons(arr) {
+    let range = [];
+    let start = arr[0];
+    let end = arr[1];
+    if (arr[0] > arr[1]){
+        start = arr[1];
+        end = arr[0];
+    }
+    while (start <= end) {
+        range.push(start);
+        start++;
+    }
+    console.log(range);
+    return range.reduce((a, b) => {
+        let pow  = 1
+        while(a ** pow != b ** pow)
+    })
+}
+
+console.log(smallestCommons([23, 18]));
