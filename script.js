@@ -4293,10 +4293,8 @@ function smallestCommons(arr) {
         start++;
     }
     console.log(range);
-    return range.reduce((a, b) => {
-        let pow  = 1
-        while(a ** pow != b ** pow)
-    })
+    let maxPowArr = [];
+    let pow = 1;
 }
 
 console.log(smallestCommons([23, 18]));
