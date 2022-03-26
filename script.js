@@ -4279,6 +4279,16 @@ console.log(sumPrimes(100));
 */
 
 // Smallest Common Multiple
+/*
+function findLcm(a, b) {
+    let lcm = b;
+    while(lcm % a != 0 || lcm % b != 0) {
+        //console.log(lcm);
+        lcm += b;
+    }
+    return lcm;
+}
+
 
 function smallestCommons(arr) {
     let range = [];
@@ -4292,18 +4302,17 @@ function smallestCommons(arr) {
         range.push(start);
         start++;
     }
-    
-}
-
-console.log(smallestCommons([1, 5]));
-
-function findLcm(a, b) {
-    let lcm = b;
-    while(lcm % a != 0 || lcm % b != 0) {
-        //console.log(lcm);
-        lcm += b;
+    let lcm = findLcm(range[0], range[1]);
+    for (let i = 2; i < range.length; i++) {
+        lcm = findLcm(lcm, range[i]);
     }
     return lcm;
 }
 
-console.log(findLcm(5, 12));
+console.log(smallestCommons([1, 5]));
+
+
+//console.log(findLcm(12, 5));
+*/
+
+// Drop it
