@@ -4334,3 +4334,18 @@ console.log(dropElements([0, 1, 0, 1], function(n) {return n === 1;}));
 
 // Steamroller
 
+function steamrollArray(arr) {
+    let finalArr = [];
+    for (let i of arr) {
+        finalArr.push(i);
+    }
+    return finalArr;
+}
+
+console.log(steamrollArray([1, [2], [3, [[4]]]]));
+
+let a = [1, [2], [3, [[4]]]];
+let b = '';
+let c = a + b;
+console.log(c.split());
+parseO
