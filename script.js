@@ -4316,3 +4316,21 @@ console.log(smallestCommons([1, 5]));
 */
 
 // Drop it
+/*
+function dropElements(arr, func) {
+    let iterateArr = [...arr];
+    for (let i of iterateArr) {
+        if (func(i) == false) {
+            arr.shift();
+        }   else if (func(i) == true) {
+            return arr;
+        }
+    }
+    return arr;
+}
+
+console.log(dropElements([0, 1, 0, 1], function(n) {return n === 1;}));
+*/
+
+// Steamroller
+
