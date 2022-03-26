@@ -4292,9 +4292,14 @@ function smallestCommons(arr) {
         range.push(start);
         start++;
     }
-    console.log(range);
+    //console.log(range);
     let maxPowArr = [];
-    let pow = 1;
+    //let pow = 1;
+    for (let i = 1; i <= 20; i++) {
+        maxPowArr.push(range[range.length - 1] * i);
+    }
+    
+    console.log(maxPowArr);
 }
 
 console.log(smallestCommons([23, 18]));
