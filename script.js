@@ -4292,14 +4292,18 @@ function smallestCommons(arr) {
         range.push(start);
         start++;
     }
-    //console.log(range);
-    let maxPowArr = [];
-    //let pow = 1;
-    for (let i = 1; i <= 20; i++) {
-        maxPowArr.push(range[range.length - 1] * i);
-    }
     
-    console.log(maxPowArr);
 }
 
-console.log(smallestCommons([23, 18]));
+console.log(smallestCommons([1, 5]));
+
+function findLcm(a, b) {
+    let lcm = b;
+    while(lcm % a != 0 || lcm % b != 0) {
+        //console.log(lcm);
+        lcm += b;
+    }
+    return lcm;
+}
+
+console.log(findLcm(5, 12));
