@@ -4334,18 +4334,26 @@ console.log(dropElements([0, 1, 0, 1], function(n) {return n === 1;}));
 
 // Steamroller
 
+let finalArr = [];
 function steamrollArray(arr) {
-    let finalArr = [];
-    for (let i of arr) {
-        finalArr.push(i);
+    //let finalArr = [];
+    //let elseArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        //console.log(Array.isArray(arr[i]), arr[i]);
+        if (Array.isArray(arr[i]) == true) {
+            let j = [].concat(...arr[i]);
+            //console.log('j =', j);
+            steamrollArray(j);
+        }   else {
+            let j = arr[i];
+            //console.log('else j =', j);
+            finalArr.push(j);
+            continue;
+        }
+        //finalArr.push(j);
     }
+    //console.log('else Arr =', elseArr);
     return finalArr;
 }
 
 console.log(steamrollArray([1, [2], [3, [[4]]]]));
-
-let a = [1, [2], [3, [[4]]]];
-let b = '';
-let c = a + b;
-console.log(c.split());
-parseO
