@@ -4380,18 +4380,18 @@ console.log(binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 0
 */
 
 // Everything Be True
-
+/*
 function truthCheck(collection, pre) {
     let truthArr = [];
     for (let i = 0; i < collection.length; i++) {
-        console.log(collection[i][pre]);
-        if (collection[i][pre] == true) {
+        //console.log(collection[i][pre]);
+        if (Boolean(collection[i][pre]) == true) {
             truthArr.push(true);
         }   else {
             truthArr.push(false);
         }
     }
-    console.log(truthArr);
+    //console.log(truthArr);
     if (truthArr.every(a => {
         return a == true;
     })) {
@@ -4402,3 +4402,7 @@ function truthCheck(collection, pre) {
 }
 
 console.log(truthCheck([{name: "Quincy", role: "Founder", isBot: false}, {name: "Naomi", role: "", isBot: false}, {name: "Camperbot", role: "Bot", isBot: true}], "name"));
+*/
+
+// Arguments Optional
+
