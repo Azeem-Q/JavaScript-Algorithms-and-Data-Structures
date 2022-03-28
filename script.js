@@ -4333,27 +4333,33 @@ console.log(dropElements([0, 1, 0, 1], function(n) {return n === 1;}));
 */
 
 // Steamroller
-
-let finalArr = [];
+/*
 function steamrollArray(arr) {
-    //let finalArr = [];
+    let finalArr = [];
     //let elseArr = [];
-    for (let i = 0; i < arr.length; i++) {
-        //console.log(Array.isArray(arr[i]), arr[i]);
-        if (Array.isArray(arr[i]) == true) {
-            let j = [].concat(...arr[i]);
-            //console.log('j =', j);
-            steamrollArray(j);
-        }   else {
-            let j = arr[i];
-            //console.log('else j =', j);
-            finalArr.push(j);
-            continue;
+    function steamroll(arr) {
+        for (let i = 0; i < arr.length; i++) {
+            //console.log(Array.isArray(arr[i]), arr[i]);
+            if (Array.isArray(arr[i]) == true) {
+                let j = [].concat(...arr[i]);
+                //console.log('j =', j);
+                steamroll(j);
+            }   else {
+                let j = arr[i];
+                //console.log('else j =', j);
+                finalArr.push(j);
+                continue;
+            }
+            //finalArr.push(j);
         }
-        //finalArr.push(j);
+        return finalArr;
     }
+    return steamroll(arr);
     //console.log('else Arr =', elseArr);
-    return finalArr;
 }
 
 console.log(steamrollArray([1, [2], [3, [[4]]]]));
+*/
+
+// Binary Agents
+
