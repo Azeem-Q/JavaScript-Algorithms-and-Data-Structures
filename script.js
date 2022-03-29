@@ -4426,4 +4426,34 @@ console.log(addTogether(2)([3]));
 */
 
 // Make a Person
+/*
+const Person = function(firstAndLast) {
+    let firstAndLastArr = firstAndLast.split(' ');
+    this.getFirstName = function() {
+        return firstAndLastArr[0];
+    }
+    this.getLastName = function() {
+        return firstAndLastArr[1];
+    }
+    this.getFullName = function() {
+        return firstAndLastArr[0] + ' ' + firstAndLastArr[1];
+    }
+    this.setFirstName = function(first) {
+        firstAndLastArr[0] = first;
+    }
+    this.setLastName = function(last) {
+        firstAndLastArr[1] = last;
+    }
+    this.setFullName = function(firstAndLast) {
+        let arr = firstAndLast.split(' ');
+        return firstAndLastArr = arr;
+    }
+}
+
+const bob = new Person('Bob Ross');
+bob.setFirstName('Haskell')
+console.log(bob.getFullName());
+*/
+
+// Map the Debris
 
