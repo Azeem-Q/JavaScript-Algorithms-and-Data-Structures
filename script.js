@@ -4457,3 +4457,22 @@ console.log(bob.getFullName());
 
 // Map the Debris
 
+function orbitalPeriod(arr) {
+    const GM = 398600.4418;
+    const earthRadius = 6367.4447;
+}
+
+console.log(orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]));
+
+let er3 = 6367.4447 ** 3;
+let u = 398600.4418;
+let pi = Math.PI;
+let pi2 = 2 * pi;
+let a3divu = er3 / u;
+let sqrta3du = Math.sqrt(er3 / u);
+
+console.log(pi2 * sqrta3du);
+console.log(sqrta3du);
+
+
+//console.log(er3)
