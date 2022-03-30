@@ -4456,23 +4456,17 @@ console.log(bob.getFullName());
 */
 
 // Map the Debris
-
+/*
 function orbitalPeriod(arr) {
     const GM = 398600.4418;
     const earthRadius = 6367.4447;
+    for (let i = 0; i < arr.length; i++) {
+        let op = Math.round(2 * Math.PI * (Math.sqrt(((earthRadius + arr[i].avgAlt) ** 3) / GM)));
+        delete arr[i].avgAlt;
+        arr[i].orbitalPeriod = op;
+    }
+    return arr;
 }
 
-console.log(orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]));
-
-let er3 = 6367.4447 ** 3;
-let u = 398600.4418;
-let pi = Math.PI;
-let pi2 = 2 * pi;
-let a3divu = er3 / u;
-let sqrta3du = Math.sqrt(er3 / u);
-
-console.log(pi2 * sqrta3du);
-console.log(sqrta3du);
-
-
-//console.log(er3)
+console.log(JSON.stringify(orbitalPeriod([{name: "iss", avgAlt: 413.6}, {name: "hubble", avgAlt: 556.7}, {name: "moon", avgAlt: 378632.553}])));
+*/
